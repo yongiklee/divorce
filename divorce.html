@@ -1,0 +1,44 @@
+<!-- 히어로 섹션의 제목 부분 수정 -->
+<h1 class="hero-title">이혼을 결심하셨든,<br>아직 혼란스럽든…</h1>
+
+<!-- 버튼 스타일 수정 -->
+<style>
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 2rem;
+            line-height: 1.4;
+            white-space: nowrap; /* 줄바꿈 방지 */
+        }
+
+        .cta-button {
+            width: 100%;
+            justify-content: center;
+            padding: 0.8rem 1rem; /* 패딩 축소 */
+            font-size: 0.95rem; /* 폰트 크기 축소 */
+            white-space: nowrap; /* 버튼 텍스트 줄바꿈 방지 */
+        }
+
+        .cta-button i {
+            margin-right: 4px; /* 아이콘과 텍스트 사이 간격 축소 */
+            font-size: 1rem;
+        }
+
+        /* 더 작은 모바일 화면에서의 추가 대응 */
+        @media (max-width: 360px) {
+            .cta-button {
+                font-size: 0.9rem;
+                padding: 0.7rem 0.8rem;
+            }
+        }
+    }
+</style>
+
+<!-- CTA 버튼 마크업 수정 -->
+<div class="cta-buttons">
+    <a href="#contact" class="cta-button" style="background:#2D3142; color:#fff;" onclick="fbq('track', 'Contact');">
+        <i class="fas fa-paper-plane"></i>연락처 남기고 상담받기
+    </a>
+    <a href="https://pf.kakao.com/_FxlTrxj/chat" target="_blank" class="cta-button" style="background:#FEE500; color:#333;" onclick="fbq('track', 'KakaoConsult');">
+        <i class="fas fa-comment"></i>카카오톡으로 상담하기
+    </a>
+</div> 
